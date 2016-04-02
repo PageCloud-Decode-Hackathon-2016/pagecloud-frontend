@@ -1,6 +1,6 @@
 import errorHandler from './errorhandler'
 export default function (node_Id) {
-  $.getJSON('/tests/unique.json',json => {
+  $.getJSON('/api/unique',json => {
     if(errorHandler(node_Id, json)){
       return;
     }

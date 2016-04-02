@@ -19,5 +19,7 @@ $(()=>{
         $('nav').removeClass('hidden')
     }
   });
-  $('a').smoothScroll();
+  $('a').smoothScroll({
+    offset: -100
+  });
 })

@@ -19,21 +19,15 @@ html(lang="en")
       .row
         nav.navbar.navbar-default.navbar-fixed-top.hidden
           .container-fluid
-            .navbar-header
-              button.navbar-toggle.collapsed(data-toggle="collapse" data-target="#navbar-collapse")
-                span.sr-only.
-                  Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-                a.navbar-brand(href="#").
-                  Statrix
-            .collapse.navbar-collapse#navbar-collapse
+            #navbar-collapse
+              a.navbar-brand(href="#").
+                Statrix
               ul.nav.navbar-nav
                 li: a(href="#unique") Unique Users
                 li: a(href="#referrers") Top Referrers
-                li: a(href="#geo") Geoplot
                 li: a(href="#bots") Bots v. Users 
+                li: a(href="#pages") Most Popular Pages
+                li: a(href="#geo") Geoplot
 
 
 
@@ -42,7 +36,6 @@ html(lang="en")
           block main
             section#unique
             section#referrers
-            section#geo
             section#bots
               .clearfix
               p.
@@ -51,11 +44,12 @@ html(lang="en")
                 hi
             section#pages.row
               .dummy.col-md-2
+            .clearfix
+            section#geo
+            .clearfix
 
       .row#footer
         .col-xs-12.copy.text-center
-          p.
-            MIT 2016
 
           block footer_append
     script(src='http://0.0.0.0:35729/livereload.js')
