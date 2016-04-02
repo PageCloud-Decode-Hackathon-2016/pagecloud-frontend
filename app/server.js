@@ -32,6 +32,7 @@ app.use(morgan('dev'))
 .use('/js',express.static(basedir+'/build/app'))
 .use('/webpack',express.static(basedir+'/build/webpack'))
 .use('/style/',express.static(basedir+'/build/style'))
+.use('/static/',express.static(basedir+'/static'))
 .use('/node_modules/bootstrap-sass',express.static(basedir+'/node_modules/bootstrap-sass'))
 .use('/api',proxy('0.0.0.0:5000',{
   filter: (req,res)=>{return req.method =='GET'},
