@@ -115,7 +115,7 @@ The response to requests made to API endpoints should correctly set the HTTP sta
 ```json
 {
     "data": {
-        agents": [
+        "agents": [
             {
                 "count": ​8,
                 "name": "RankActiveLinkBot"
